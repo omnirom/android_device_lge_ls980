@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,12 @@
 # limitations under the License.
 #
 
-include device/lge/g2-common/BoardConfigCommon.mk
+# This file is executed by build/envsetup.sh, and can use anything
+# defined in envsetup.sh.
+#
+# In particular, you can add lunch options with the add_lunch_combo
+# function: add_lunch_combo generic-eng
 
-TARGET_KERNEL_CONFIG := custom_ls980_defconfig
-
-TARGET_OTA_ASSERT_DEVICE := ls980,g2,galbi
-
-G2_DTS_TARGET := msm8974-g2-spr
+add_lunch_combo aosp_ls980-userdebug
+add_lunch_combo full_ls980-userdebug
+add_lunch_combo omni_ls980-userdebug

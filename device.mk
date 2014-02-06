@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/lge/ls980/ls980-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/galbi/galbi-ls980-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
 ## overlays

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2011 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,7 @@
 # limitations under the License.
 #
 
-include device/lge/g2-common/BoardConfigCommon.mk
-
-TARGET_KERNEL_CONFIG := custom_ls980_defconfig
-
-TARGET_OTA_ASSERT_DEVICE := ls980,g2,galbi
-
-G2_DTS_TARGET := msm8974-g2-spr
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_ls980.mk \
+    $(LOCAL_DIR)/full_ls980.mk \
+    $(LOCAL_DIR)/omni_ls980.mk
