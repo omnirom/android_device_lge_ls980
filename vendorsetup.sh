@@ -20,6 +20,5 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo aosp_ls980-userdebug
-add_lunch_combo full_ls980-userdebug
 add_lunch_combo omni_ls980-userdebug
+
